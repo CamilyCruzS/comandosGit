@@ -1,0 +1,36 @@
+CONFIGURAÇÃO DO GIT:
+git config --global user.name "Fulano de Tal"
+git config --global user.email fulanodetal@exemplo.br
+git config --list
+
+
+
+MUDAR BRANCH DE MASTER PARA MAIN:
+git branch -m master main
+
+
+
+SUBIR PROJETO PARA O GITHUB:
+git init
+git add . 
+git status
+git commit -m "Descrição"
+git push -f URLREPOSITORIO main
+
+
+GIT CLONE:
+git clone URLREPOSITORIO
+
+
+
+GIT REVERT
+	DESFAZER COMMITS:
+	git revert 'NUMERODOHASH'
+
+	PARA DESCOBRIR NUMERO DO HASH:
+	git log -- oneline
+
+
+	DESFAZER GIT REVERT
+	git revert --abort
+	
